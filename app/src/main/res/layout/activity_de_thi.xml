@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.onthi.laixe.onthigiaypheplaixe.DeThiActivity">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:text="Ôn Thi Bằng Lái Xe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <GridView
+        android:numColumns="2"
+        android:id="@+id/Gv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridView>
+</LinearLayout>

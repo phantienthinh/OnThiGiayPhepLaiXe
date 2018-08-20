@@ -1,191 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:weightSum="2"
-    tools:context=".MainActivity">
-
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-
-        android:paddingBottom="@dimen/_10sdp"
-        android:paddingLeft="@dimen/_10sdp"
-        android:paddingRight="@dimen/_3sdp"
-        android:paddingTop="@dimen/_10sdp">
-        <RelativeLayout
-            android:orientation="vertical"
-            android:background="#50af9e"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_100sdp"
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="18dp"
-                android:src="@android:drawable/ic_input_add" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="Đề ngẫu nhiên" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginTop="@dimen/_5sdp"
-            android:orientation="vertical"
-            android:background="#50af9e"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_100sdp"
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="18dp"
-                android:src="@android:drawable/ic_input_add" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="chức năng 1" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginTop="@dimen/_5sdp"
-            android:orientation="vertical"
-            android:background="#50af9e"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_100sdp"
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="18dp"
-                android:src="@android:drawable/ic_input_add" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="chức năng 1" />
-        </RelativeLayout>
-
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+    android:textSize="20sp"
+    android:textColor="#fff"
+    android:text="Ôn thi giấy phép lái xe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="0dp"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingBottom="@dimen/_10sdp"
-        android:paddingLeft="@dimen/_3sdp"
-        android:paddingRight="@dimen/_10sdp">
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:context=".MainActivity">
 
-        <RelativeLayout
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#50af9e"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_100sdp"
-            >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="18dp"
-                android:src="@android:drawable/ic_input_add" />
-
-            <TextView
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingTop="@dimen/_10sdp">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:background="#50af9e"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="Thi bộ đề" />
-        </RelativeLayout>
+                android:layout_height="@dimen/_100sdp"
+                >
 
-        <RelativeLayout
-            android:layout_marginTop="@dimen/_5sdp"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:src="@android:drawable/ic_input_add" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Đề ngẫu nhiên" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="#50af9e"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:src="@android:drawable/ic_input_add" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Ôn tập câu hỏi" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="#50af9e"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:src="@android:drawable/ic_input_add" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Luật giao thông" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#50af9e"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_100sdp"
-            >
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_10sdp">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="18dp"
-                android:src="@android:drawable/ic_input_add" />
-
-            <TextView
+            <RelativeLayout
+                android:id="@+id/rl_bo_de"
+                android:orientation="vertical"
+                android:background="#50af9e"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="chức năng 1" />
-        </RelativeLayout>
+                android:layout_height="@dimen/_100sdp"
+                >
 
-        <RelativeLayout
-            android:layout_marginTop="@dimen/_5sdp"
-            android:orientation="vertical"
-            android:background="#50af9e"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_100sdp"
-            >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:src="@android:drawable/ic_input_add" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="18dp"
-                android:src="@android:drawable/ic_input_add" />
+                <TextView
 
-            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Thi bộ đề" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="#50af9e"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="chức năng 1" />
-        </RelativeLayout>
+                android:layout_height="@dimen/_100sdp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:src="@android:drawable/ic_input_add" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Chủ Đề" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="#50af9e"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:src="@android:drawable/ic_input_add" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Mẹo ghi nhớ" />
+            </RelativeLayout>
+        </LinearLayout>
+
     </LinearLayout>
-
 </LinearLayout>
