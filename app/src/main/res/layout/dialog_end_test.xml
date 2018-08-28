@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Kết Thúc"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:text="Bạn có muốn thoát?"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_cancel_end_test"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Hủy Bỏ"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_yes_end_test"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Đồng Ý"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

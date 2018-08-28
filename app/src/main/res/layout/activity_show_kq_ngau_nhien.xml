@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShowKQActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Điểm Số"
+            android:textSize="@dimen/_25sdp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="center_vertical"
+                android:text="Câu đúng :"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_cau_dung_ngau_nhien"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+
+        </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="Câu sai :"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_cau_sai_ngau_nhien"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="Tổng điểm :"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_tong_diem_ngau_nhien"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="Đánh giá:"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_danh_gia_ngau_nhien"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <Button
+                android:id="@+id/btn_Kq_ngau_nhien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem kết quả" />
+            <Button
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/btn_thoat_ngau_nhien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thoát" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

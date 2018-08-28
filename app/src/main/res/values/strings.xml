@@ -3,4 +3,39 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gioi_thieu">Hiện nay, Trong việc thi bằng lái xe máy thì phần thi thực hành chấm điểm tự động bằng chip. Do máy tự động chấm điểm nên việc thi thực hành tỷ lệ trượt nhiều hơn so với trước. Qua quá trình tổ chức thi sát hạch qua rất nhiều học viên đúc kết ra một số mẹo cần chuẩn bị trước để thi đảm bảo đỗ 100% 1.Tập trước vòng số 8 ở nhà. Phần thi thực hành trượt nhiều nhất là ở phần thi vòng số 8. Do đó, việc bạn đã biết đi xe máy thành thạo nhưng chưa tập qua vòng số 8 thì cũng rất dễ bị trượt. Bạn nên tập qua vòng số 8 càng nhiều lần càng tốt. Ít nhất là lúc đi xe vào vòng số 8 không còn cảm thấy loạng choạng. 2.Hôm thi lên sân thi thật sớm. Tại sao chúng tôi lại khuyên bạn như vậy? Bởi vì xe của bạn thì bạn quen với nó, bạn đi rất ngon lành. Nhưng xe của sân thi thì khác nhiều đấy, nếu bạn không đến sớm để làm quen với nó thì cũng rất dễ trượt. Hơn nữa, buổi thi thường sẽ có rất đông người. Nếu bạn đến sớm thì không phải chờ lâu mới được tập xe. Còn nếu đến muộn thì khả năng phải xếp hàng dài dài mới đến lượt mình. 3.Cách đi để không bị chạm vạch Đi xe vào từ mép ngoài bên trái, bởi vì như thế thì bánh sau mới không bị đè lên vạch. Nếu bạn đi vào từ mép ngoài bên phải thì nhìn bánh trước vào rất ngon lành, nhưng rất tiếc bánh sau sẽ bị đè lên vạch ngay. Tương tự lúc ra khỏi vòng số 8 cũng như vậy. Bạn phải cho xe ra từ mép ngoài bên trái, nếu không bánh sau của xe cũng sẽ đè lên vạch. Lưu ý: Lúc thi thực hành bạn nên để xe ở số 3 mà đi. Bởi vì số 4 thì có thể sẽ hơi yếu, nhưng số 1,2 thì sẽ bị giật mạnh. Phần đường gồ ghề bạn nên để số 3 đi và nên đi chậm chậm vừa phải nếu không muốn bay luôn cả người và xe ra ngoài.</string>
+    <string name="chay_theo_vong_so_8">Phần 1: Chạy theo vòng số 8 – Khi nghe gọi tên vào thi thực hành bài thi sát hạch lái xe mô tô thí sinh nhận xe, đội mũ bảo hiểm, gạt chống xe và nổ máy đưa xe vào vị trí xuất phát. – Trong phần thi số 1 thí sinh phải nhớ nguyên tắc vào 8 ra 3, phải chạy đủ vòng. Nên chạy với tốc độ vừa phải trong suốt lộ trình. – Khi nghe hiệu lệnh của người chấm thi thí sinh bắt đầu phần thi số 1 của bài thi thực hành thi sát hạch lái xe mô tô. – Gài số vào hình, xuất phát rẽ phải đi 1 vòng số 8 theo mũi tên đỏ sau đó vòng ra cửa số 2 theo hướng mũi tên xanh. ➤ Lưu ý: Trong phần thi này thí sinh nên để số 2 đi luôn cho đầm máy. Khi chạy sa hình số 8, thí sinh nên hạ nhẹ ga xuống. Tuy nhiên tốc độ không nên quá chậm, nếu chạy nhanh thí sinh có thể rà thắng từ từ để phần bánh trước của xe bám vào vành ngoài của vòng số 8. Đây là phần thi khó nhất của bài thi thực hành thi sát hạch lái xe mô tô và giám khảo cũng thường quan sát kỹ phần thi này nên các bạn cần lưu ý.</string>
+    <string name="bai2">Trong phần này đường đi khá hẹp nên các bạn thí sinh cần lưu ý chỉ nên đi với tốc độ vừa phải , và đi giữa đường để tránh bị chạm vạch.</string>
+    <string name="bai3">Trong phần 3 của bài thi thực hành thi sát hạch lái xe mô tô, thí sinh nên nhảy ga đều đặn để xe chạy nhịp nhàng. Phần thi này đòi hỏi học viên cần có kỹ thuật đi vòng cua.</string>
+    <string name="bai4">Đây là phần thi thực hành cuối cùng. Các thí sinh phải giữ vững tay lái của mình tránh tình trạng mất lái, không nên đi với tốc độ quá chậm vì sẽ dễ ngã xe ảnh hưởng đến bài thi.</string>
+    <string name="khai_niem_quy_tac">1.Câu khái niệm "Phương tiện giao thông cơ giới đường bộ" chọn "Kể cả xe máy điện".</string>
+    <string name="khai_niem_quy_tac1">2.Câu khái niệm "Phương tiện giao thông thô sơ đường độ" chọn "Kể cả xe đạp máy".</string>
+    <string name="khai_niem_quy_tac2">3.Câu khái niệm "Người điều khiển giao thông" là "Cảnh sát giao thông".</string>
+    <string name="khai_niem_quy_tac3">4.Câu khái niệm "Phần đường xe chạy" chọn câu không có chữ "An toàn giao thông".</string>
+    <string name="khai_niem_quy_tac4">5.Câu khái niệm "Làn đường" chọn câu có chữ "An toàn giao thông".</string>
+    <string name="khai_niem_quy_tac5">6.Các câu "Đổ xe: không có giới hạn về thời gian và Dừng xe có giới hạn thời gian" chọn câu số 2.</string>
+    <string name="khai_niem_quy_tac6">7.Về nồng độ cồn, trong máu = 50, trong khí thở = 0, 25 hoặc không có gì cả trong máu và khí thở.</string>
+    <string name="khai_niem_quy_tac7">8.Dừng xe, đỗ xe cách lề đường, hè phố không quá 0,25 mét.</string>
+    <string name="khai_niem_quy_tac8">9.Giữ khoảng cách 5 mét với đường sắt.</string>
+    <string name="khai_niem_quy_tac9">10.Sử dụng giấy phép lái xe giả cấm 05 năm.</string>
+    <string name="khai_niem_quy_tac10">11.Chọn "Cơ quan quản lý giao thông" đối với các trường hợp Xe quá tải, xe quá khổ và xe vận chuyển hàng nguy hiểm.</string>
+    <string name="khai_niem_quy_tac11">12.Chọn "UBND cấp tỉnh" đối với trường hợp cấm đi, cấm đổ, cấm dừng, đường ngược chiều.</string>
+    <string name="khai_niem_quy_tac12">13.Loại giấy tờ mang theo: Giấy phép lái xe phù hợp với loại xe.</string>
+    <string name="khai_niem_quy_tac13">14.Độ tuổi lấy bằng theo hạng (mỗi hạng cách nhau 3 tuổi): 16: Xe dưới 50cm3; 18: Hạng A, B; 21: Hạng C; 24: Hạng D, FC; 27: Hạng E.</string>
+    <string name="khai_niem_quy_tac14">15.Độ tuổi tối đa người lái xe ô tô hạng E: Nam 55 tuổi và nữ 50 tuổi.</string>
+    <string name="khai_niem_quy_tac15">16.Không lái xe liên tục quá 4 giờ.</string>
+    <string name="khai_niem_quy_tac16">17.Gặp câu hỏi về hạng FE thì chọn Câu 1, hạng FC thì chọn Câu 2.</string>
+    <string name="khai_niem_quy_tac17">18.Tốc độ giới hạn của xe: Bên ngoài khu dân cư 80km/h &lt; 3,5 tấn, 70km/h > 3,5 tấn</string>
+    <string name="khai_niem_quy_tac18">19.Tốc độ của xe ô tô trên đường cao tốc, bạn lấy tốc độ (lớn nhất) trong câu hỏi rồi trừ cho 30 thì sẽ ra đáp án đúng.</string>
+    <string name="he_thong">Đối với các câu có biển báo hiệu lệnh được đặt trước ngã ba, ngã tư. Chọn câu 1 nếu câu hỏi 1 dòng, câu 3 nếu câu hỏi có 2 dòng.</string>
+    <string name="sa_hinh">Đối với câu hỏi liên quan đến việc điều khiển của CSGT, CSGT giơ tay thẳng lên thì các loại xe phải đứng lại, đưa 1 hoặc 2 tay giang ngang thì xe trước và đằng sau phải đứng lại.</string>
+    <string name="sa_hinh1">Đường giao nhau có vòng xuyến nhường bên trái, không có vòng xuyến nhường bên phải.</string>
+    <string name="sa_hinh2">Thấy xuất hiện "Công an" thì chọn câu số 3.</string>
+    <string name="sa_hinh3">Xe nào đã vào ngã tư thì xe đó có quyền ưu tiên đi trước cao nhất.</string>
+    <string name="sa_hinh4">Tiếp đó đến các xe ưu tiên. Trong các xe ưu tiên thì xe cứu hoả có ưu tiên xe quân sự, xe công an, xe cứu thương.</string>
+    <string name="sa_hinh5">Tiếp đó nếu cùng là xe ưu tiên hoặc cùng là xe không ưu tiên thì xét đến đường ưu tiên, tức là xe nào nằm trên đường ưu tiên thì có quyền đi trước (Xem biển báo hoặc tín hiệu đèn).</string>
+    <string name="sa_hinh6">Xe nào không vướng xe khác ở bên phải có quyền đi trước</string>
+    <string name="sa_hinh7">Thứ tự ưu tiên tiếp theo: xe rẽ phải —> xe đi thẳng —> xe rẽ trái.</string>
+    <string name="he_thong1">Biển báo cấm máy kéo thì không cấm ô tô tải và ngược lại.</string>
+    <string name="he_thong2">Biển báo cấm rẽ trái thì cấm quay đầu và biển cấm quay đầu thì không cấm rẽ trái.</string>
 </resources>

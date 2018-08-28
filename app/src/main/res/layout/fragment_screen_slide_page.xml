@@ -10,12 +10,13 @@
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="fill_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:paddingLeft="@dimen/_10sdp"
-            android:paddingRight="@dimen/_10sdp"
-            android:orientation="vertical">
+            android:paddingRight="@dimen/_10sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,69 +37,94 @@
                     android:id="@+id/tvQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/_18sdp"
-                    android:textColor="#000000"
-                    android:textStyle="italic"
                     android:layout_marginBottom="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:text="Câu hỏi thứ nhất " />
+                    android:text="Câu hỏi thứ nhất "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="italic" />
             </LinearLayout>
 
             <ImageView
+                android:layout_marginBottom="10dp"
                 android:id="@+id/ivIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:padding="0dp"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_100sdp"
                 android:layout_gravity="center"
+                android:padding="0dp"
                 android:visibility="visible" />
 
             <!--<RadioGroup-->
-                <!--android:id="@+id/radGroup"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:paddingLeft="5dp">-->
+            <!--android:id="@+id/radGroup"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="5dp">-->
 
-                <RadioButton
+            <RadioButton
 
-                    android:id="@+id/radA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Trả lời 1"
-                    android:textColor="#1502c7"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
+                android:id="@+id/radA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trả lời 1"
+                android:textColor="#1502c7"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
 
-                <RadioButton
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:id="@+id/radB"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_16sdp"
-                    android:textColor="#1502c7"
-                    android:textStyle="bold"
-                    android:text="Trả lời 2" />
+            <RadioButton
+                android:id="@+id/radB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Trả lời 2"
+                android:textColor="#1502c7"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
 
-                <RadioButton
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:id="@+id/radC"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_16sdp"
-                    android:textColor="#1502c7"
-                    android:textStyle="bold"
-                    android:text="Trả lời 3" />
+            <RadioButton
+                android:id="@+id/radC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Trả lời 3"
+                android:textColor="#1502c7"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
 
-                <RadioButton
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:id="@+id/radD"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_16sdp"
-                    android:textColor="#1502c7"
-                    android:textStyle="bold"
-                    android:text="Trả lời 4" />
+            <RadioButton
+                android:id="@+id/radD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Trả lời 4"
+                android:textColor="#1502c7"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
             <!--</RadioGroup>-->
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_gt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Giải thích đáp án"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_giai_thich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#a44ee456"
+                android:gravity="center_vertical"
+                android:text="Giải thích đáp án"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:visibility="gone" />
         </LinearLayout>
+
+
     </ScrollView>
 </LinearLayout>

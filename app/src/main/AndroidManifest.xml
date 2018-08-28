@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DeThiActivity" />
-        <activity android:name=".ScreenSlideActivity"></activity>
+        <activity android:name=".activity.DeThiActivity" />
+        <activity android:name=".activity.ShowKQNgauNhienActivity" />
+        <activity android:name=".activity.ScreenSlideActivity" />
+        <activity android:name=".activity.ShowKQActivity" />
+        <activity android:name=".activity.ChuDeActivity" />
+        <activity android:name=".activity.OnTapActivity" />
+        <activity android:name=".activity.NgauNhienActivity" />
+        <activity android:name=".activity.ScreenSlideChuDeActivity" />
+        <activity android:name=".activity.BienBaoActivity" />
+        <activity android:name=".activity.MeoActivity"></activity>
     </application>
 
 </manifest>

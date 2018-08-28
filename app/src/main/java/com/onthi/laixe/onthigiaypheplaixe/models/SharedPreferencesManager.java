@@ -7,13 +7,13 @@ import android.preference.PreferenceManager;
 
 public class SharedPreferencesManager {
 
-    public static void setTimeSleep(Context context, String is) {
+    public static void setButtonEnd(Context context, boolean is) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        preferences.edit().putString("KEY_TimeSleep", is).apply();
+        preferences.edit().putBoolean("KEY_ButtonEnd", is).apply();
     }
 
-    public static String getTimeSleep(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context).getString("KEY_TimeSleep", "00:00");
+    public static boolean getButtonEnd(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context).getBoolean("KEY_ButtonEnd", false);
     }
 
 

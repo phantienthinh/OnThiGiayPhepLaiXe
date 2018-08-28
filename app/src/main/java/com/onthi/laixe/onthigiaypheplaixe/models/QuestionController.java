@@ -22,7 +22,55 @@ public class QuestionController {
             Question item;
             item = new Question(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3)
                     ,cursor.getString(4),cursor.getString(5),cursor.getString(6),cursor.getString(7),cursor.getString(8)
-                    ,cursor.getInt(9),cursor.getString(10));
+                    ,cursor.getInt(9),cursor.getString(10),"");
+            lsData.add(item);
+
+        } while (cursor.moveToNext());
+        return lsData;
+    }
+
+    public ArrayList<Question> getQuestionChuDe(String loai) {
+        ArrayList<Question> lsData = new ArrayList<Question>();
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM cauhoi Where loai='" + loai + "'", null);
+        cursor.moveToFirst();
+        do {
+            Question item;
+            item = new Question(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3)
+                    ,cursor.getString(4),cursor.getString(5),cursor.getString(6),cursor.getString(7),cursor.getString(8)
+                    ,cursor.getInt(9),cursor.getString(10),"");
+            lsData.add(item);
+
+        } while (cursor.moveToNext());
+        return lsData;
+    }
+
+    public ArrayList<Question> getAllQuestion() {
+        ArrayList<Question> lsData = new ArrayList<Question>();
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM cauhoi", null);
+        cursor.moveToFirst();
+        do {
+            Question item;
+            item = new Question(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3)
+                    ,cursor.getString(4),cursor.getString(5),cursor.getString(6),cursor.getString(7),cursor.getString(8)
+                    ,cursor.getInt(9),cursor.getString(10),"");
+            lsData.add(item);
+
+        } while (cursor.moveToNext());
+        return lsData;
+    }
+
+    public ArrayList<Question> getRandomQuestion(int id) {
+        ArrayList<Question> lsData = new ArrayList<Question>();
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM cauhoi Where _id = '"+id+"'", null);
+        cursor.moveToFirst();
+        do {
+            Question item;
+            item = new Question(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3)
+                    ,cursor.getString(4),cursor.getString(5),cursor.getString(6),cursor.getString(7),cursor.getString(8)
+                    ,cursor.getInt(9),cursor.getString(10),"");
             lsData.add(item);
 
         } while (cursor.moveToNext());

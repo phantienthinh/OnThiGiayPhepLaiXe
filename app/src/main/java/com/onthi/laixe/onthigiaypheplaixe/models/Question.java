@@ -1,6 +1,8 @@
 package com.onthi.laixe.onthigiaypheplaixe.models;
 
-public class Question {
+import java.io.Serializable;
+
+public class Question  implements Serializable{
     private int _id;
     private String cauhoi;
     private String ans_a;
@@ -12,8 +14,18 @@ public class Question {
     private String note;
     private int num_exam;
     private String loai;
+    private String tra_loi="";
+    public int  dap_an=-1;
 
-    public Question(int _id, String cauhoi, String ans_a, String ans_b, String ans_c, String ans_d, String ketqua, String image, String note, int num_exam, String loai) {
+    public String getTra_loi() {
+        return tra_loi;
+    }
+
+    public void setTra_loi(String tra_loi) {
+        this.tra_loi = tra_loi;
+    }
+
+    public Question(int _id, String cauhoi, String ans_a, String ans_b, String ans_c, String ans_d, String ketqua, String image, String note, int num_exam, String loai,String tra_loi) {
         this._id = _id;
         this.cauhoi = cauhoi;
         this.ans_a = ans_a;
@@ -25,6 +37,7 @@ public class Question {
         this.note = note;
         this.num_exam = num_exam;
         this.loai = loai;
+        this.tra_loi = tra_loi;
     }
 
     public Question() {

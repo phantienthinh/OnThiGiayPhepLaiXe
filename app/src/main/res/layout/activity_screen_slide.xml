@@ -13,6 +13,7 @@
         android:weightSum="10">
 
         <ImageView
+            android:id="@+id/iv_back"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1.5"
@@ -46,6 +47,7 @@
 
 
         <TextView
+            android:id="@+id/tv_timer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -66,6 +68,8 @@
         </LinearLayout>
 
         <TextView
+
+            android:id="@+id/tv_Check"
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -75,25 +79,23 @@
             android:text="Kiểm Tra"
             android:textColor="#fff"
             android:textSize="18sp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_Xem_diem"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="Xem Điểm"
+            android:textColor="#fff"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
-        <RelativeLayout
-            android:visibility="gone"
-            android:layout_above="@id/pager"
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_230sdp">
-            <GridView
-                android:numColumns="6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </GridView>
-        </RelativeLayout>
 
         <android.support.v4.view.ViewPager
             android:id="@+id/pager"
