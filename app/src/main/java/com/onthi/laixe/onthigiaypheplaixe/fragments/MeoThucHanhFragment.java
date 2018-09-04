@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ public class MeoThucHanhFragment extends Fragment implements View.OnClickListene
     Context context;
     private LinearLayout ln_gioi_thieu, ln_bai1, ln_bai2, ln_bai3, ln_bai4;
     private TextView tv_gioi_thieu, tv_bai1, tv_bai2, tv_bai3, tv_bai_4;
+    private ImageView iv_gioi_thieu,iv_bai1,iv_bai2,iv_bai3,iv_bai4;
     boolean a = false, b = false, c = false, d = false, e = false;
 
     public MeoThucHanhFragment() {
@@ -48,6 +50,12 @@ public class MeoThucHanhFragment extends Fragment implements View.OnClickListene
         tv_bai3 = v.findViewById(R.id.tv_bai3);
         tv_bai_4 = v.findViewById(R.id.tv_bai4);
 
+        iv_gioi_thieu = v.findViewById(R.id.iv_gioi_thieu);
+        iv_bai1 = v.findViewById(R.id.iv_bai1);
+        iv_bai2 = v.findViewById(R.id.iv_bai2);
+        iv_bai3 = v.findViewById(R.id.iv_bai3);
+        iv_bai4 = v.findViewById(R.id.iv_bai4);
+
         ln_gioi_thieu.setOnClickListener(this);
         ln_bai1.setOnClickListener(this);
         ln_bai2.setOnClickListener(this);
@@ -69,9 +77,11 @@ public class MeoThucHanhFragment extends Fragment implements View.OnClickListene
                 if (a == false) {
                     a = true;
                     tv_gioi_thieu.setVisibility(View.VISIBLE);
+                    iv_gioi_thieu.setImageResource(R.drawable.more);
                 } else {
                     a = false;
                     tv_gioi_thieu.setVisibility(View.GONE);
+                    iv_gioi_thieu.setImageResource(R.drawable.down);
                 }
                 break;
             case R.id.ln_bai1:
@@ -79,9 +89,11 @@ public class MeoThucHanhFragment extends Fragment implements View.OnClickListene
                 if (b == false) {
                     b = true;
                     tv_bai1.setVisibility(View.VISIBLE);
+                    iv_bai1.setImageResource(R.drawable.more);
                 } else {
                     b = false;
                     tv_bai1.setVisibility(View.GONE);
+                    iv_bai1.setImageResource(R.drawable.down);
                 }
                 break;
             case R.id.ln_bai2:
@@ -89,9 +101,11 @@ public class MeoThucHanhFragment extends Fragment implements View.OnClickListene
                 if (c == false) {
                     c = true;
                     tv_bai2.setVisibility(View.VISIBLE);
+                    iv_bai2.setImageResource(R.drawable.more);
                 } else {
                     c = false;
                     tv_bai2.setVisibility(View.GONE);
+                    iv_bai2.setImageResource(R.drawable.down);
                 }
                 break;
             case R.id.ln_bai3:
@@ -99,9 +113,11 @@ public class MeoThucHanhFragment extends Fragment implements View.OnClickListene
                 if (d == false) {
                     d = true;
                     tv_bai3.setVisibility(View.VISIBLE);
+                    iv_bai3.setImageResource(R.drawable.more);
                 } else {
                     d = false;
                     tv_bai3.setVisibility(View.GONE);
+                    iv_bai3.setImageResource(R.drawable.down);
                 }
                 break;
             case R.id.ln_bai4:
@@ -109,9 +125,11 @@ public class MeoThucHanhFragment extends Fragment implements View.OnClickListene
                 if (e == false) {
                     e = true;
                     tv_bai_4.setVisibility(View.VISIBLE);
+                    iv_bai4.setImageResource(R.drawable.more);
                 } else {
                     e = false;
                     tv_bai_4.setVisibility(View.GONE);
+                    iv_gioi_thieu.setImageResource(R.drawable.down);
                 }
                 break;
         }

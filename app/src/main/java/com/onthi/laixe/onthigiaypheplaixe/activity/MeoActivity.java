@@ -1,9 +1,11 @@
 package com.onthi.laixe.onthigiaypheplaixe.activity;
 
+import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -35,6 +37,9 @@ public class MeoActivity extends AppCompatActivity implements View.OnClickListen
     private void addControl() {
         pager = (ViewPager) findViewById(R.id.viewpager_meo);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout_meo);
+        tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#e43f12"));
+        tabLayout.setTabTextColors(   ContextCompat.getColor(this, R.color.color_write_opaciti),
+                ContextCompat.getColor(this, R.color.color_write));
 //        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         FragmentManager manager = getSupportFragmentManager();
         Meoadapter = new PagerMeoAdapter(manager);

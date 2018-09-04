@@ -15,14 +15,15 @@
         android:layout_height="50dp">
         <ImageView
             android:id="@+id/iv_back_meo"
-            android:padding="5dp"
+            android:padding="10dp"
             android:src="@drawable/back"
             android:layout_gravity="center"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="40dp" />
 
         <TextView
-            android:textSize="15sp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="20sp"
             android:textColor="#fff"
             android:gravity="center_vertical"
             android:text="Mẹo Thi Kết Quả Cao"

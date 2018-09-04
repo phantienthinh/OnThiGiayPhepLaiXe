@@ -216,6 +216,8 @@ public class ScreenSlidePageChuDeFragment extends Fragment implements View.OnCli
 
     @Override
     public void onClick(View view) {
+
+        Log.e("2245",ketQua_A+"KETQUA:"+ketQua );
         switch (view.getId()) {
             case R.id.radA:
                 if (a == false) {
@@ -237,6 +239,7 @@ public class ScreenSlidePageChuDeFragment extends Fragment implements View.OnCli
                 break;
 
             case R.id.radB:
+                Log.e("1234",b+"" );
                 if (b == false) {
                     b = true;
                     radB.setChecked(true);
@@ -384,5 +387,65 @@ public class ScreenSlidePageChuDeFragment extends Fragment implements View.OnCli
             ketQua = ketQua.replace(",0", "");
         }
     }
-//add onpageer lisentner
+
+    @Override
+    public void onResume() {
+        if (radA.isChecked()==true){
+            a=true;
+            ketQua_A = "1";
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+            checkChangeRadioButton(1, ketQua);
+            Log.e("2244", ketQua );
+        }else {
+            a=false;
+            ketQua_A = "0";
+
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+            checkChangeRadioButton(1, ketQua);
+        }
+        if (radB.isChecked()==true){
+            b=true;
+            ketQua_B = ",2";
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+            checkChangeRadioButton(2, ketQua);
+        }else {
+            b=false;
+            ketQua_B = ",0";
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+            checkChangeRadioButton(2, ketQua);
+        }
+        if (radC.isChecked()==true){
+            c=true;
+            ketQua_C = ",3";
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+            checkChangeRadioButton(3, ketQua);
+        }else {
+            c=false;
+            ketQua_C = ",0";
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+            checkChangeRadioButton(3, ketQua);
+        }
+        if (radD.isChecked()==true){
+            d=true;
+            ketQua_D = ",4";
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+            checkChangeRadioButton(4, ketQua);
+        }else {
+            d=false;
+            ketQua_D = ",0";
+            ketQua = ketQua_A + ketQua_B + ketQua_C + ketQua_D;
+            replace();
+
+            checkChangeRadioButton(4, ketQua);
+        }
+        super.onResume();
+    }
+    //add onpageer lisentner
 }

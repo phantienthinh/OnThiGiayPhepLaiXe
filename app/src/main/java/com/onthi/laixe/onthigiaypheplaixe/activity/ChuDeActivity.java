@@ -3,24 +3,24 @@ package com.onthi.laixe.onthigiaypheplaixe.activity;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.onthi.laixe.onthigiaypheplaixe.R;
-import com.onthi.laixe.onthigiaypheplaixe.adapters.DeThiAdapter;
-import com.onthi.laixe.onthigiaypheplaixe.models.DeThi;
+import com.onthi.laixe.onthigiaypheplaixe.adapters.ChuDeAdapter;
+import com.onthi.laixe.onthigiaypheplaixe.models.ChuDe;
 import com.onthi.laixe.onthigiaypheplaixe.models.SharedPreferencesManager;
 
 import java.util.ArrayList;
 
 public class ChuDeActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
-    private DeThiAdapter deThiAdapter;
+    private ChuDeAdapter chuDeAdapter;
     private GridView gvChuDe;
-    private ArrayList<DeThi> arrayList = new ArrayList<>();
+    private ArrayList<ChuDe> arrayList = new ArrayList<>();
     private ImageView iv_Back;
     private BroadcastReceiver receiver;
     private IntentFilter filter;
@@ -35,11 +35,11 @@ public class ChuDeActivity extends AppCompatActivity implements View.OnClickList
         initView();
         gvChuDe = findViewById(R.id.Gv_layout);
         gvChuDe.setNumColumns(1);
-        arrayList.add(new DeThi("Lý Thuyết"));
-        arrayList.add(new DeThi("Biển Báo"));
-        arrayList.add(new DeThi("Sa Hình"));
-        deThiAdapter = new DeThiAdapter(this, arrayList);
-        gvChuDe.setAdapter(deThiAdapter);
+        arrayList.add(new ChuDe("Lý Thuyết"));
+        arrayList.add(new ChuDe("Biển Báo"));
+        arrayList.add(new ChuDe("Sa Hình"));
+        chuDeAdapter = new ChuDeAdapter(this, arrayList);
+        gvChuDe.setAdapter(chuDeAdapter);
         gvChuDe.setOnItemClickListener(this);
     }
 

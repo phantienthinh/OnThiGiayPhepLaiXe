@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import com.onthi.laixe.onthigiaypheplaixe.R;
 import com.onthi.laixe.onthigiaypheplaixe.adapters.DeThiAdapter;
 import com.onthi.laixe.onthigiaypheplaixe.models.DeThi;
+import com.onthi.laixe.onthigiaypheplaixe.models.SharedPreferencesManager;
 
 import java.util.ArrayList;
 
@@ -71,6 +72,7 @@ public class DeThiActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        SharedPreferencesManager.setButtonEnd(this,false);
         switch (i){
             case 0:
                 Intent intent = new Intent(this, ScreenSlideActivity.class);

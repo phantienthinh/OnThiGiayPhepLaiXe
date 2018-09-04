@@ -1,180 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical">
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:elevation="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:background="#ed4cd1b0"
-                android:id="@+id/ln_gioi_thieu"
-                android:padding="10dp"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:weightSum="10">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
 
-                <TextView
-                    android:layout_weight="8.5"
-                    android:textSize="20dp"
-                    android:text="Giới thiệu"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content" />
-                <ImageView
-                    android:padding="8dp"
-                    android:src="@drawable/down"
-                    android:layout_weight="1.5"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
 
-            <TextView
-                android:visibility="gone"
-                android:id="@+id/tv_gioi_thieu"
-                android:text="@string/gioi_thieu"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <LinearLayout
-                android:elevation="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:background="#ed4cd1b0"
-                android:id="@+id/ln_bai1"
-                android:padding="10dp"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:weightSum="10">
+                    <LinearLayout
+                        android:id="@+id/ln_gioi_thieu"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="10">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="8.5"
-                    android:text="Bài 1: Chạy theo vòng số 8"
-                    android:textSize="20dp" />
-                <ImageView
-                    android:padding="8dp"
-                    android:src="@drawable/down"
-                    android:layout_weight="1.5"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <TextView
-                android:visibility="gone"
-                android:id="@+id/tv_bai1"
-                android:text="@string/chay_theo_vong_so_8"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <LinearLayout
-                android:elevation="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:background="#ed4cd1b0"
-                android:id="@+id/ln_bai2"
-                android:padding="10dp"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:weightSum="10">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.5"
+                            android:text="Giới thiệu"
+                            android:textSize="20dp" />
 
-                <TextView
-                    android:layout_weight="8.5"
-                    android:textSize="20dp"
-                    android:text="Bài 2:Đi vào đường hẹp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content" />
-                <ImageView
-                    android:padding="8dp"
-                    android:src="@drawable/down"
-                    android:layout_weight="1.5"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <TextView
-                android:visibility="gone"
-                android:id="@+id/tv_bai2"
-                android:text="@string/bai2"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <LinearLayout
-                android:elevation="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:background="#ed4cd1b0"
-                android:id="@+id/ln_bai3"
-                android:padding="10dp"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:weightSum="10">
+                        <ImageView
+                            android:id="@+id/iv_gioi_thieu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:padding="8dp"
+                            android:src="@drawable/down" />
+                    </LinearLayout>
 
-                <TextView
-                    android:layout_weight="8.5"
-                    android:textSize="20dp"
-                    android:text="Bài 3:Chạy đường quanh co"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content" />
-                <ImageView
-                    android:padding="8dp"
-                    android:src="@drawable/down"
-                    android:layout_weight="1.5"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <TextView
-                android:visibility="gone"
-                android:id="@+id/tv_bai3"
-                android:text="@string/bai3"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <LinearLayout
-                android:elevation="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:background="#ed4cd1b0"
-                android:id="@+id/ln_bai4"
-                android:padding="10dp"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:weightSum="10">
+                    <TextView
+                        android:id="@+id/tv_gioi_thieu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/gioi_thieu"
+                        android:visibility="gone" />
+                </LinearLayout>
 
-                <TextView
-                    android:layout_weight="8.5"
-                    android:textSize="20dp"
-                    android:text="Bài 4:Chạy đường quanh co"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content" />
-                <ImageView
-                    android:padding="8dp"
-                    android:src="@drawable/down"
-                    android:layout_weight="1.5"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <TextView
-                android:visibility="gone"
-                android:id="@+id/tv_bai4"
-                android:text="@string/bai4"
-                android:padding="10dp"
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ln_bai1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:elevation="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.5"
+                            android:text="Bài 1: Chạy theo vòng số 8"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_bai1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:padding="8dp"
+                            android:src="@drawable/down" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_bai1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/chay_theo_vong_so_8"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ln_bai2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:elevation="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.5"
+                            android:text="Bài 2:Đi vào đường hẹp"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_bai2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:padding="8dp"
+                            android:src="@drawable/down" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_bai2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/bai2"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ln_bai3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:elevation="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.5"
+                            android:text="Bài 3:Chạy đường quanh co"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_bai3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:padding="8dp"
+                            android:src="@drawable/down" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_bai3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/bai3"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ln_bai4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:elevation="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.5"
+                            android:text="Bài 4:Chạy đường quanh co"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_bai4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:padding="8dp"
+                            android:src="@drawable/down" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_bai4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/bai4"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
         </LinearLayout>
 
     </ScrollView>

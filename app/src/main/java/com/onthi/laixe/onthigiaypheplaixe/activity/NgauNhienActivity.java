@@ -56,10 +56,12 @@ public class NgauNhienActivity extends FragmentActivity implements View.OnClickL
     private BroadcastReceiver receiver;
     private IntentFilter filter;
     private TextView tv_check, tvTimer, tv_cancel_end_test, tv_yes_end_test, tv_xem_diem;
+    private Button bt_cancel_end_test,bt_yes_end_test;
     private Dialog dialog;
     //    private CountDownTimer timer;
     private CountDownTimerPausable timer;
     private Dialog dialog_end_test;
+    private Animation animation;
     private static final long timeDeThi = 20 * 60 * 1000;
     /**
      * The pager adapter, which provides the pages to the view pager widget.
@@ -103,7 +105,7 @@ public class NgauNhienActivity extends FragmentActivity implements View.OnClickL
         mPager = (ViewPager) findViewById(R.id.pager);
         iv_hourGlass = findViewById(R.id.iv_hourglass);
 //        iv_hourGlass.setVisibility(View.GONE);
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_hourglass);
+        animation = AnimationUtils.loadAnimation(this, R.anim.anim_hourglass);
         iv_hourGlass.setAnimation(animation);
         iv_hourGlass.startAnimation(animation);
 
@@ -143,6 +145,7 @@ public class NgauNhienActivity extends FragmentActivity implements View.OnClickL
 //        arr_questions = questionController.getRandomQuestion();
 
 //        arr_questions.get().getImage();
+        mPager.setOffscreenPageLimit(arr_questions.size());
         mPager.setAdapter(mPagerAdapter);
         mPager.setPageTransformer(true, new DepthPageTransformer());
 
@@ -217,16 +220,22 @@ public class NgauNhienActivity extends FragmentActivity implements View.OnClickL
                 dialog_end_test.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialog_end_test.setContentView(R.layout.dialog_end_test);
                 dialog_end_test.show();
-                tv_cancel_end_test = dialog_end_test.findViewById(R.id.tv_cancel_end_test);
-                tv_yes_end_test = dialog_end_test.findViewById(R.id.tv_yes_end_test);
-                tv_cancel_end_test.setOnClickListener(this);
-                tv_yes_end_test.setOnClickListener(this);
+                bt_cancel_end_test = dialog_end_test.findViewById(R.id.tv_cancel_end_test);
+                bt_yes_end_test = dialog_end_test.findViewById(R.id.tv_yes_end_test);
+                bt_cancel_end_test.setOnClickListener(this);
+                bt_yes_end_test.setOnClickListener(this);
+
 //                finish();
                 break;
             case R.id.tv_cancel_end_test:
                 dialog_end_test.cancel();
                 break;
             case R.id.tv_yes_end_test:
+                try {
+                    timer.cancel();
+                }catch (Exception e){
+
+                }
                 finish();
                 break;
             case R.id.tv_Xem_diem:
@@ -247,7 +256,8 @@ public class NgauNhienActivity extends FragmentActivity implements View.OnClickL
     @Override
     public void onCancel(DialogInterface dialogInterface) {
         timer.start();
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_hourglass);
+        animation = AnimationUtils.loadAnimation(this, R.anim.anim_hourglass);
+        iv_hourGlass.setAnimation(animation);
         iv_hourGlass.startAnimation(animation);
     }
 
@@ -353,7 +363,7 @@ public class NgauNhienActivity extends FragmentActivity implements View.OnClickL
 //                iv_hourGlass.clearAnimation();
 //            }
 //        };
-
+//timeDeThi
         timer = new CountDownTimerPausable(timeDeThi, 1000) {
             @Override
             public void onTick(long l) {
@@ -369,8 +379,11 @@ public class NgauNhienActivity extends FragmentActivity implements View.OnClickL
 
             @Override
             public void onFinish() {
-                Toast.makeText(NgauNhienActivity.this, "hết giò", Toast.LENGTH_SHORT).show();
+                Log.e("abc", "vao" );
+                Toast.makeText(NgauNhienActivity.this, "hết giờ", Toast.LENGTH_SHORT).show();
                 iv_hourGlass.clearAnimation();
+                SharedPreferencesManager.setButtonEnd(NgauNhienActivity.this,true);
+                sendBroadcast(new Intent("key_show_text"));
                 tvTimer.setText("00:00");
             }
         };

@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -55,6 +56,7 @@ public class ScreenSlideActivity extends FragmentActivity implements View.OnClic
     private BroadcastReceiver receiver;
     private IntentFilter filter;
     private TextView tv_check, tvTimer, tv_cancel_end_test, tv_yes_end_test, tv_xem_diem;
+    private Button btn_cancel_end_test,btn_yes_end_test;
     private Dialog dialog;
     private Animation animation;
     //    private CountDownTimer timer;
@@ -98,6 +100,7 @@ public class ScreenSlideActivity extends FragmentActivity implements View.OnClic
 //        animator.start();
 
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+        mPager.setOffscreenPageLimit(20);
         mPager.setAdapter(mPagerAdapter);
         mPager.setPageTransformer(true, new DepthPageTransformer());
         questionController = new QuestionController(this);
@@ -187,17 +190,25 @@ public class ScreenSlideActivity extends FragmentActivity implements View.OnClic
             case R.id.iv_back:
                 dialog_end_test = new Dialog(this);
                 dialog_end_test.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog_end_test.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
                 dialog_end_test.setContentView(R.layout.dialog_end_test);
                 dialog_end_test.show();
-                tv_cancel_end_test = dialog_end_test.findViewById(R.id.tv_cancel_end_test);
-                tv_yes_end_test = dialog_end_test.findViewById(R.id.tv_yes_end_test);
-                tv_cancel_end_test.setOnClickListener(this);
-                tv_yes_end_test.setOnClickListener(this);
+                btn_cancel_end_test = dialog_end_test.findViewById(R.id.tv_cancel_end_test);
+                btn_yes_end_test = dialog_end_test.findViewById(R.id.tv_yes_end_test);
+                btn_cancel_end_test.setOnClickListener(this);
+                btn_yes_end_test.setOnClickListener(this);
+
+
                 break;
             case R.id.tv_cancel_end_test:
                 dialog_end_test.cancel();
                 break;
             case R.id.tv_yes_end_test:
+                try {
+                    timer.cancel();
+                }catch (Exception e){
+
+                }
                 finish();
                 break;
             case R.id.tv_Xem_diem:
@@ -340,8 +351,11 @@ public class ScreenSlideActivity extends FragmentActivity implements View.OnClic
 
             @Override
             public void onFinish() {
-                Toast.makeText(ScreenSlideActivity.this, "hết giò", Toast.LENGTH_SHORT).show();
+                Log.e("qq", "bennay" );
+                Toast.makeText(ScreenSlideActivity.this, "hết giờ", Toast.LENGTH_SHORT).show();
                 iv_hourGlass.clearAnimation();
+                SharedPreferencesManager.setButtonEnd(ScreenSlideActivity.this,true);
+                sendBroadcast(new Intent("key_show_text"));
                 tvTimer.setText("00:00");
             }
         };

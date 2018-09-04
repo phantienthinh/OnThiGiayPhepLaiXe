@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.onthi.laixe.onthigiaypheplaixe.R;
@@ -14,7 +15,8 @@ import java.io.IOException;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private RelativeLayout rl_bo_de, rl_chu_de, rl_on_tap, rl_ngau_nhien, rl_bien_bao, rl_meo;
+    private LinearLayout rl_bo_de, rl_chu_de, rl_on_tap,  rl_bien_bao, rl_meo;
+    private LinearLayout rl_ngau_nhien;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         DBHelper dbHelper = new DBHelper(this);
 
-        try {
-            dbHelper.deleteDataBase();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            dbHelper.deleteDataBase();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         try {
             dbHelper.createDataBase();
         } catch (IOException e) {

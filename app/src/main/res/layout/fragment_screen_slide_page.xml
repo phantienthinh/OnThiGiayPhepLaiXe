@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fcfac1"
+    android:background="#fff"
     android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,22 +15,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="@dimen/_10sdp"
-            android:paddingRight="@dimen/_10sdp">
+            android:padding="@dimen/_10sdp">
 
             <LinearLayout
+                android:gravity="center_vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
 
                 <TextView
                     android:id="@+id/tvNum"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Câu 1"
-                    android:textColor="#ff0011"
-                    android:textSize="@dimen/_22sdp"
+                    android:text="Câu hỏi 1:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -41,15 +41,15 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Câu hỏi thứ nhất "
                     android:textColor="#000000"
-                    android:textSize="@dimen/_18sdp"
-                    android:textStyle="italic" />
+                    android:textSize="17sp"
+                     />
             </LinearLayout>
 
             <ImageView
                 android:layout_marginBottom="10dp"
                 android:id="@+id/ivIcon"
-                android:layout_width="@dimen/_250sdp"
-                android:layout_height="@dimen/_100sdp"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_80sdp"
                 android:layout_gravity="center"
                 android:padding="0dp"
                 android:visibility="visible" />
@@ -61,42 +61,45 @@
             <!--android:paddingLeft="5dp">-->
 
             <RadioButton
-
+                android:paddingLeft="@dimen/_15sdp"
                 android:id="@+id/radA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Trả lời 1"
-                android:textColor="#1502c7"
+                android:textColor="#363636"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
 
             <RadioButton
+                android:paddingLeft="@dimen/_15sdp"
                 android:id="@+id/radB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:text="Trả lời 2"
-                android:textColor="#1502c7"
+                android:textColor="#363636"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
 
             <RadioButton
+                android:paddingLeft="@dimen/_15sdp"
                 android:id="@+id/radC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:text="Trả lời 3"
-                android:textColor="#1502c7"
+                android:textColor="#363636"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
 
             <RadioButton
+                android:paddingLeft="@dimen/_15sdp"
                 android:id="@+id/radD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:text="Trả lời 4"
-                android:textColor="#1502c7"
+                android:textColor="#363636"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
             <!--</RadioGroup>-->

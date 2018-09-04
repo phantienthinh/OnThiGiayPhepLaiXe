@@ -99,6 +99,7 @@ public class OnTapActivity extends FragmentActivity implements View.OnClickListe
         arr_questions = questionController.getAllQuestion();
 
 //        arr_questions.get().getImage();
+        mPager.setOffscreenPageLimit(3);
         mPager.setAdapter(mPagerAdapter);
         mPager.setPageTransformer(true, new DepthPageTransformer());
 

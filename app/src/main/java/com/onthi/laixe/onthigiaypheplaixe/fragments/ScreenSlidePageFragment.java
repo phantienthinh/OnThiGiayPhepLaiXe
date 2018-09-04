@@ -70,6 +70,18 @@ public class ScreenSlidePageFragment extends Fragment implements View.OnClickLis
         return rootView;
     }
 
+    @Override
+    public void onResume() {
+        Log.e("123", "onResume: " );
+        super.onResume();
+    }
+
+    @Override
+    public void onDetach() {
+        Log.e("123", "onDetach: ");
+        super.onDetach();
+    }
+
     private void initView(View group) {
         iv_icon = group.findViewById(R.id.ivIcon);
         tv_gt = group.findViewById(R.id.tv_gt);
@@ -237,6 +249,7 @@ public class ScreenSlidePageFragment extends Fragment implements View.OnClickLis
                 break;
 
             case R.id.radB:
+                Log.e("23", b+"" );
                 if (b == false) {
                     b = true;
                     radB.setChecked(true);
